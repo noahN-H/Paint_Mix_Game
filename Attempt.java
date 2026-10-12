@@ -1,6 +1,6 @@
 class Attempt{
-    private PaintMix suggestion;
-    private PaintMix solution;
+    final PaintMix suggestion;
+    final PaintMix solution;
 
     Attempt(PaintMix suggestion, PaintMix solution){
         this.suggestion = suggestion;
@@ -13,15 +13,12 @@ class Attempt{
 
     public int getNumGood(){
         int counter = 0;
-        boolean[] counted = new boolean[5];
 
         for (int i = 0; i < 5; i++){
             if ((this.suggestion.getPaint(i) == this.solution.getPaint(i))){
-                counted[i] = true;
                 counter++;
             }
         }
-
         return counter;
     }
 
