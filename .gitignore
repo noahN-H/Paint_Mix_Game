@@ -15,7 +15,7 @@
 .mtj.tmp/
 
 # Package Files #
-!cs1811PaintTesterStudent.jar
+!PaintTester.jar
 *.jar
 *.war
 *.nar
